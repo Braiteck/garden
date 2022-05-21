@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#53bed0">
+		<meta name="theme-color" content="#53bed0">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="top">
+						<div class="cont row">
+							<button class="mob_menu_btn">
+								<span></span>
+							</button>
+
+							<nav class="menu row">
+								<div class="item">
+									<a href="/">Сборка заказов</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Акции и новости</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Контакты</a>
+								</div>
+
+								<div class="item">
+									<a href="/">О нас</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Доставка почтой</a>
+								</div>
+							</nav>
+
+							<div class="city">
+								<div class="name">Город</div>
+
+								<select name="">
+									<option value="1" selected>Москва</option>
+									<option value="2">Санкт-Петербург</option>
+									<option value="3">Москва</option>
+									<option value="4">Москва</option>
+								</select>
+
+								<img src="images/ic_select_arrow.svg" alt="" class="icon">
+							</div>
+
+							<div class="phone">
+								<a href="tel:88000000000">8 (800) 000-00-00</a>
+							</div>
+
+							<div class="account">
+								<a href="/">
+									<img src="images/ic_user.png" alt="" class="icon">
+									<span>Личный кабинет</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="info">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.png" alt="">
+							</a>
+
+							<button class="mob_search_btn">
+								<img src="images/ic_search.svg" alt="" class="icon">
+							</button>
+
+							<div class="search">
+								<form action="">
+									<img src="images/ic_search.svg" alt="" class="icon">
+									<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+								</form>
+							</div>
+
+							<a href="/" class="cart">
+								<img src="images/ic_cart.png" alt="" class="icon">
+								<div class="empty">В корзине<br> нет товаров</div>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">
+								<img src="images/ic_home.png" alt="" class="icon">
+								<span>Главная</span>
+							</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+							<a href="/">Каталог</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+							<a href="/">Овощи</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+							<span class="current">Помидоры</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="categories">
+								<div class="title">Мы продаём</div>
+
+								<div class="items accordion">
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ПЛОДОВЫЕ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ДЕКОРАТИВНЫЕ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item active">
+										<a href="/" class="head sub_link">
+											<span>ОВОЩИ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories" style="display: block;">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ЛУК И ЧЕСНОК</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="product_info">
+								<section class="head">
+									<h1 class="product_name">Помидоры Купидон</h1>
+
+									<div class="print_btn">
+										<button class="btn">
+											<img src="images/ic_print.png" alt="" class="icon">
+											<span>Распечатать</span>
+										</button>
+									</div>
+								</section>
+
+
+								<section class="product_data">
+									<div class="data">
+										<div class="thumb">
+											<img data-src="images/tmp/product_img.jpg" alt="" class="lozad">
+										</div>
+
+										<div class="info">
+											<div class="in_package">В упаковке: 5 штук</div>
+
+											<div class="buy">
+												<div class="price"><span>59</span>.00 Р</div>
+
+												<div class="amount">
+													<button type="button" class="minus">-</button>
+
+													<input type="text" value="1 пак." class="input"
+													  data-minimum="1" data-maximum="99" data-step="1" data-unit=" пак." maxlength="2">
+
+													<button type="button" class="plus">+</button>
+												</div>
+
+												<button class="buy_btn">
+													<img src="images/ic_buy_btn.png" alt="" class="icon">
+													<img src="images/ic_buy_btn_h.png" alt="" class="icon">
+													<span>Добавить в корзину</span>
+												</button>
+											</div>
+
+											<div class="where_buy">
+												<img src="images/ic_location.png" alt="" class="icon">
+
+												<div>
+													<div class="title">Где купить?</div>
+
+													<div class="link">
+														<a href="/" target="_blank">Адреса магазинов</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="information">
+										<div class="code">Код: 12345</div>
+
+										<div class="stickers">
+											<div class="sticker yellow">Новинка</div>
+											<div class="sticker red">Акция</div>
+										</div>
+
+										<div class="rating">
+											<div class="stars">
+												<img src="images/ic_star2.svg" alt="" class="icon">
+												<img src="images/ic_star2.svg" alt="" class="icon">
+												<img src="images/ic_star2.svg" alt="" class="icon">
+												<img src="images/ic_star.svg" alt="" class="icon">
+												<img src="images/ic_star.svg" alt="" class="icon">
+											</div>
+											<div class="count">120 оценок</div>
+										</div>
+
+										<div class="description">Вино приготовлено по классической технологии из отборного винограда сорта Совиньон Блан, выращенного на плантациях завода KVINT. Это одно из лучших белых столовых вин этого брэнда. Обладает ярко выраженным ароматом с тонами листа черной смородины и маракуйи, дополненным оттенками спелого крыжовника и пряными нотками паприки. Идеально сочетается с блюдами из рыбы, морепродуктами, легкими овощными салатами. Рекомендуемая температура подачи: +9-11 °С.</div>
+
+										<div class="features">
+											<div>
+												<div class="icon">
+													<img data-src="images/ic_product_feature1.png" alt="" class="lozad">
+												</div>
+												<div>50—80 см</div>
+											</div>
+
+											<div>
+												<div class="icon">
+													<img data-src="images/ic_product_feature2.png" alt="" class="lozad">
+												</div>
+												<div>60х50 см</div>
+											</div>
+
+											<div>
+												<div class="icon">
+													<img data-src="images/ic_product_feature3.png" alt="" class="lozad">
+												</div>
+												<div>120 дней</div>
+											</div>
+
+											<div>
+												<div class="icon">
+													<img data-src="images/ic_product_feature4.png" alt="" class="lozad">
+												</div>
+												<div>15—35 см</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+								<section class="product_tabs tabs_container">
+									<div class="tabs">
+										<button data-content="#tab1" data-level="level1" class="active">НАЛИЧИЕ В МАГАЗИНАХ</button>
+										<button data-content="#tab2" data-level="level1">Отзывы</button>
+									</div>
+
+
+									<div class="tab_content level1 active" id="tab1">
+										<div class="region_status">
+											<div class="desc">
+												В регионе
+
+												<div class="field">
+													<select name="">
+														<option value="1" selected>Москва и МО</option>
+														<option value="2">Москва и МО</option>
+														<option value="3">Москва и МО</option>
+													</select>
+
+													<img src="images/ic_select_arrow.svg" alt="" class="icon">
+												</div>
+
+												товар в наличии в следующих магазинах:
+											</div>
+
+											<table>
+												<thead>
+													<tr>
+														<th>Магазин</th>
+														<th>Количество в наличии</th>
+													</tr>
+												</thead>
+
+												<tbody>
+													<tr>
+														<td class="name">Название магазина 1</td>
+														<td class="val">60</td>
+													</tr>
+
+													<tr>
+														<td class="name">Название магазина 1</td>
+														<td class="val">60</td>
+													</tr>
+
+													<tr>
+														<td class="name">Название магазина 1</td>
+														<td class="val">60</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+
+									<div class="tab_content level1" id="tab2">
+										<div class="reviews">
+											<button class="add_review_btn modal_btn" data-content="#add_review_modal">Оставить отзыв</button>
+
+											<div class="list">
+												<div class="review">
+													<div class="head">
+														<div class="date">08.08.2021</div>
+
+														<div class="name">Евгений</div>
+
+														<div class="rating">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<div class="photo">
+														<!-- <img data-src="images/tmp/review_photo.jpg" alt="" class="lozad"> -->
+													</div>
+
+													<div class="text">Достоинства: Плодоносит в любых условиях, не пропускает в жару, толерантен к пониженным ночным температурам. Недостатки: Из махровых цветков могут развиваться уродливые плоды с глубокой цветоножкой. Мой любимчик на протяжении всего периода выращивания, ежегодно хотя бы два кустика. Ароматный, классический томатный вкус. Идеален для салатов, соусов</div>
+												</div>
+
+												<div class="review">
+													<div class="head">
+														<div class="date">08.08.2021</div>
+
+														<div class="name">Евгений</div>
+
+														<div class="rating">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<div class="photo">
+														<!-- <img data-src="images/tmp/review_photo.jpg" alt="" class="lozad"> -->
+													</div>
+
+													<div class="text">Достоинства: Плодоносит в любых условиях, не пропускает в жару, толерантен к пониженным ночным температурам. Недостатки: Из махровых цветков могут развиваться уродливые плоды с глубокой цветоножкой. Мой любимчик на протяжении всего периода выращивания, ежегодно хотя бы два кустика. Ароматный, классический томатный вкус. Идеален для салатов, соусов</div>
+												</div>
+
+												<div class="review">
+													<div class="head">
+														<div class="date">08.08.2021</div>
+
+														<div class="name">Евгений</div>
+
+														<div class="rating">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star2.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+															<img src="images/ic_star.svg" alt="">
+														</div>
+													</div>
+
+													<div class="photo">
+														<!-- <img data-src="images/tmp/review_photo.jpg" alt="" class="lozad"> -->
+													</div>
+
+													<div class="text">Достоинства: Плодоносит в любых условиях, не пропускает в жару, толерантен к пониженным ночным температурам. Недостатки: Из махровых цветков могут развиваться уродливые плоды с глубокой цветоножкой. Мой любимчик на протяжении всего периода выращивания, ежегодно хотя бы два кустика. Ароматный, классический томатный вкус. Идеален для салатов, соусов</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</section>
+						</section>
+					</div>
+				</section>
+
+
+				<section class="products bg">
+					<div class="cont">
+						<div class="block_title">Вам может понравиться</div>
+
+						<div class="row">
+							<div class="product">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="info">
+									<div class="code">Код: 12345</div>
+
+									<div class="name">
+										<a href="/">Помидоры Купидон</a>
+									</div>
+
+									<div class="status">В наличии в 4 магазинах</div>
+
+									<div class="buy">
+										<div class="price"><span>59</span>.00 Р</div>
+
+										<div class="amount">
+											<button type="button" class="minus">-</button>
+
+											<input type="text" value="1 пак." class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit=" пак." maxlength="2">
+
+											<button type="button" class="plus">+</button>
+										</div>
+
+										<button class="buy_btn">
+											<img src="images/ic_buy_btn.png" alt="" class="icon">
+											<img src="images/ic_buy_btn_h.png" alt="" class="icon">
+											<span>Добавить в корзину</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb2.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="info">
+									<div class="code">Код: 12345</div>
+
+									<div class="name">
+										<a href="/">Помидоры Хаки полосатый</a>
+									</div>
+
+									<div class="status">В наличии в 4 магазинах</div>
+
+									<div class="buy">
+										<div class="price"><span>59</span>.00 Р</div>
+
+										<div class="amount">
+											<button type="button" class="minus">-</button>
+
+											<input type="text" value="1 пак." class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit=" пак." maxlength="2">
+
+											<button type="button" class="plus">+</button>
+										</div>
+
+										<button class="buy_btn">
+											<img src="images/ic_buy_btn.png" alt="" class="icon">
+											<img src="images/ic_buy_btn_h.png" alt="" class="icon">
+											<span>Добавить в корзину</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb3.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="info">
+									<div class="code">Код: 12345</div>
+
+									<div class="name">
+										<a href="/">Помидоры Мармолада F1</a>
+									</div>
+
+									<div class="status no">Нет в наличии</div>
+
+									<div class="buy">
+										<div class="price"><span>59</span>.00 Р</div>
+
+										<div class="amount">
+											<button type="button" class="minus">-</button>
+
+											<input type="text" value="1 пак." class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit=" пак." maxlength="2">
+
+											<button type="button" class="plus">+</button>
+										</div>
+
+										<button class="buy_btn">
+											<img src="images/ic_buy_btn.png" alt="" class="icon">
+											<img src="images/ic_buy_btn_h.png" alt="" class="icon">
+											<span>Добавить в корзину</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="product">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/product_thumb4.jpg" alt="" class="lozad">
+								</a>
+
+								<div class="info">
+									<div class="code">Код: 12345</div>
+
+									<div class="name">
+										<a href="/">Помидоры Алая заря</a>
+									</div>
+
+									<div class="status">В наличии в 4 магазинах</div>
+
+									<div class="buy">
+										<div class="price"><span>59</span>.00 Р</div>
+
+										<div class="amount">
+											<button type="button" class="minus">-</button>
+
+											<input type="text" value="1 пак." class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit=" пак." maxlength="2">
+
+											<button type="button" class="plus">+</button>
+										</div>
+
+										<button class="buy_btn">
+											<img src="images/ic_buy_btn.png" alt="" class="icon">
+											<img src="images/ic_buy_btn_h.png" alt="" class="icon">
+											<span>Добавить в корзину</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="phone">
+						<a href="tel:88007377758">8 800 737-77-58</a>
+						<div class="exp">Круглосуточно</div>
+					</div>
+
+					<div class="contacts">
+						<div class="title">Контакты</div>
+
+						<div class="location">Челябинская область,<br> Красноармейский район,<br> д. Шибаново, ул. Центральная, 92</div>
+					</div>
+
+					<div class="apps">
+						<div class="title">Наши приложения</div>
+
+						<div class="links">
+							<a href="/">
+								<img src="images/ic_google_play.png" alt="">
+							</a>
+
+							<a href="/">
+								<img src="images/ic_app_stote.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="add_review_modal">
+			<div class="modal_title">Оставить отзыв</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="label">Имя <span class="required">*</span></div>
+
+						<div class="field">
+							<input type="text" name="" value="" class="input">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="label">E-mail <span class="required">*</span></div>
+
+						<div class="field">
+							<input type="email" name="" value="" class="input">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="label">Текст отзыва <span class="required">*</span></div>
+
+						<div class="field">
+							<textarea name=""></textarea>
+						</div>
+					</div>
+
+					<div class="line rating">
+						<div class="label"></div>
+
+						<div class="field">
+							<div class="stars">
+								<input type="radio" name="rating" id="rating-5">
+								<label for="rating-5">
+									<img src="images/ic_star.svg" alt="">
+									<img src="images/ic_star2.svg" alt="">
+								</label>
+
+								<input type="radio" name="rating" id="rating-4">
+								<label for="rating-4">
+									<img src="images/ic_star.svg" alt="">
+									<img src="images/ic_star2.svg" alt="">
+								</label>
+
+								<input type="radio" name="rating" id="rating-3">
+								<label for="rating-3">
+									<img src="images/ic_star.svg" alt="">
+									<img src="images/ic_star2.svg" alt="">
+								</label>
+
+								<input type="radio" name="rating" id="rating-2">
+								<label for="rating-2">
+									<img src="images/ic_star.svg" alt="">
+									<img src="images/ic_star2.svg" alt="">
+								</label>
+
+								<input type="radio" name="rating" id="rating-1">
+								<label for="rating-1">
+									<img src="images/ic_star.svg" alt="">
+									<img src="images/ic_star2.svg" alt="">
+								</label>
+							</div>
+
+							<div>Оценка</div>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Отправить</button>
+					</div>
+
+					<div class="agree">Нажимая на кнопку отправки сообщения, Вы соглашаетесь на обработку Ваших персональных данных и подтверждаете, что ознакомились с Политикой конфиденциальности.</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/air-datepicker.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

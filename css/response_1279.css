@@ -1,0 +1,1305 @@
+@media print, (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 240px;
+        --font_size: 15px;
+        --font_size_title: 28px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        bottom: 20px;
+    }
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--sidebar_width) - 32px);
+    }
+
+
+    .block
+    {
+        margin-bottom: 64px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 32px;
+    }
+
+
+    .load_more .more_btn,
+    .load_more .all_btn
+    {
+        height: 40px;
+        padding: 0 23px 2px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .tabs button
+    {
+        height: 44px;
+        padding: 11px 23px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 8px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .info
+    {
+        padding: 16px 0;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+    header .menu
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        padding: 16px 24px 24px;
+
+        border-top: 1px solid #ebebeb;
+        background: var(--bg);
+    }
+
+    header .menu .item + .item
+    {
+        margin-left: 0;
+    }
+
+    header .menu .item > a
+    {
+        font-size: 16px;
+
+        height: auto;
+        padding: 8px 0;
+
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+    header .city
+    {
+        width: calc(100% - 370px);
+        padding-left: 0;
+
+        border-left: none;
+    }
+
+    header .city .name
+    {
+        display: none;
+    }
+
+    header .city .nice-select .current
+    {
+        line-height: 40px;
+
+        height: 40px;
+    }
+
+
+    header .phone
+    {
+        line-height: 40px;
+
+        width: 160px;
+    }
+
+
+    header .account
+    {
+        width: 184px;
+    }
+
+    header .account a
+    {
+        font-size: 14px;
+
+        height: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    header .logo,
+    header .logo img
+    {
+        width: 204px;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 420px);
+    }
+
+    header .search .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+    header .search .input
+    {
+        font-size: var(--font_size);
+    }
+
+
+    header .cart
+    {
+        width: 140px;
+    }
+
+    header .cart .icon
+    {
+        width: 38px;
+        margin-right: 12px;
+    }
+
+    header .cart .empty
+    {
+        width: calc(100% - 50px);
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside .categories .title
+    {
+        line-height: 20px;
+
+        padding: 12px 16px;
+    }
+
+
+    aside .categories .item > a
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding: 12px 16px;
+    }
+
+    aside .categories .item > a.sub_link
+    {
+        padding-right: 48px;
+    }
+
+    aside .categories .sub_categories a
+    {
+        font-size: 15px;
+        line-height: 20px;
+
+        padding: 12px 16px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 24px;
+        padding-top: 20px;
+    }
+
+
+    .page_head .sub_categories
+    {
+        margin-top: 20px;
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+
+    .page_head .sub_categories > *
+    {
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .page_head .sub_categories a
+    {
+        font-size: 14px;
+
+        padding: 7px 15px;
+
+        border-width: 1px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .catalog .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .catalog .category .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding: 11px 15px;
+    }
+
+
+
+    /*-----------
+        Shops
+    -----------*/
+    .shops .region,
+    .shops .search
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .shops .search .input
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        margin-top: 40px;
+    }
+
+
+    .contacts_info .block_head
+    {
+        margin-bottom: 20px !important;
+    }
+
+
+    .contacts_info .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .contacts_info .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*-------------------
+        Products head
+    -------------------*/
+    .products_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products.bg
+    {
+        padding: 44px 0 60px;
+    }
+
+
+    .products .block_title
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .products .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .content .products .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+    .products .product .info
+    {
+        padding: 16px;
+    }
+
+
+    .products .product .code
+    {
+        font-size: 14px;
+    }
+
+
+    .products .product .status,
+    .products .product .status.no
+    {
+        font-size: 13px;
+
+        background-position: 0 5px;
+    }
+
+
+    .products .row .product .buy .price
+    {
+        width: 100%;
+        padding: 4px 12px;
+
+        text-align: center;
+    }
+
+    .products .row .product .buy .price span
+    {
+        font-size: 26px;
+    }
+
+
+    .products .row .product .buy .amount
+    {
+        width: 100%;
+        padding: 0 12px 12px;
+
+        border: none;
+    }
+
+
+    .products .product .buy_btn
+    {
+        font-size: 13px;
+
+        height: 52px;
+        padding: 12px;
+    }
+
+    .products .product .buy_btn .icon
+    {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+
+    .products .list .product .info
+    {
+        width: calc(100% - 386px);
+    }
+
+    .products .list .product .buy
+    {
+        width: 268px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .steps
+    {
+        font-size: 14px;
+
+        margin-top: -12px;
+        margin-bottom: 12px;
+        margin-left: -16px;
+
+        justify-content: space-between;
+    }
+
+    .checkout_info .steps .step
+    {
+        min-height: 36px;
+        margin-bottom: 12px;
+        margin-left: 16px;
+        padding-left: 46px;
+    }
+
+    .checkout_info .steps .step:before
+    {
+        font-size: 16px;
+        line-height: 32px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .checkout_info .steps .step.active
+    {
+        font-weight: 400;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .cart_info table th
+    {
+        line-height: 20px;
+
+        padding: 9px 15px;
+    }
+
+
+    .cart_info table td
+    {
+        padding: 15px;
+    }
+
+    .cart_info table td.name
+    {
+        line-height: 20px;
+
+        padding-left: 0;
+    }
+
+    .cart_info table td.price,
+    .cart_info table td.total_price
+    {
+        width: 112px;
+        min-width: 112px;
+    }
+
+
+    .cart_info table tfoot td
+    {
+        padding: 15px;
+    }
+
+    .cart_info table td.thumb
+    {
+        width: 75px;
+        min-width: 75px;
+    }
+
+
+    .cart_info .cart_total_price
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------------
+        Choose shop
+    -----------------*/
+    .choose_shop .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .choose_shop .search
+    {
+        margin-bottom: 24px;
+    }
+
+    .choose_shop .search .input
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .choose_shop .list
+    {
+        width: calc(50% - 12px);
+    }
+
+    .choose_shop .list > * + *
+    {
+        margin-top: 16px;
+    }
+
+
+    .choose_shop .list .shop .time
+    {
+        line-height: 20px;
+    }
+
+    .choose_shop .list .shop .phone
+    {
+        line-height: 20px;
+
+        margin-top: 4px;
+    }
+
+
+    .choose_shop .list .shop .date
+    {
+        line-height: 20px;
+
+        width: 100%;
+    }
+
+
+    .choose_shop .list .shop .choose_btn
+    {
+        width: 100%;
+        margin-top: 12px;
+        padding: 8px;
+    }
+
+
+    .choose_shop .map_wrap
+    {
+        width: calc(50% - 12px);
+    }
+
+
+
+    /*-----------------------
+        Checkout contacts
+    -----------------------*/
+    .checkout_contacts .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------
+        Checkout confirm
+    ----------------------*/
+    .checkout_confirm .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .checkout_confirm .data .title
+    {
+        line-height: 20px;
+
+        padding: 11px 15px;
+    }
+
+
+    .checkout_confirm .order_list
+    {
+        width: calc(100% - 278px);
+    }
+
+    .checkout_confirm .order_list .product
+    {
+        padding: 15px;
+    }
+
+    .checkout_confirm .order_list .product .name
+    {
+        line-height: 20px;
+
+        width: calc(100% - 188px);
+        padding-left: 16px;
+    }
+
+    .checkout_confirm .order_list .product .amount
+    {
+        width: 64px;
+    }
+
+
+    .checkout_confirm .order_price
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        padding: 15px;
+    }
+
+
+    .checkout_confirm .shop
+    {
+        width: 280px;
+    }
+
+    .checkout_confirm .shop .info
+    {
+        padding: 15px;
+    }
+
+
+    .checkout_confirm .checkout_total .price
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .stocks .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .stocks .stock .name
+    {
+        line-height: 20px;
+
+        padding: 11px 15px;
+    }
+
+    .stocks .stock .duration
+    {
+        font-size: 11px;
+        line-height: 13px;
+
+        padding: 11px 15px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .product_name
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    .product_info .product_data
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .product_info .product_data .data
+    {
+        width: 300px;
+    }
+
+
+    .product_info .product_data .data .info
+    {
+        padding: 15px;
+    }
+
+
+    .product_info .product_data .buy
+    {
+        width: calc(100% + 30px);
+        margin-top: 15px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+    .product_info .product_data .buy .price
+    {
+        font-size: 18px;
+
+        padding: 0 15px;
+    }
+
+    .product_info .product_data .buy .price span
+    {
+        font-size: 32px;
+    }
+
+
+    .product_info .product_data .buy .amount
+    {
+        padding: 11px;
+    }
+
+
+    .product_info .product_data .buy_btn
+    {
+        height: 52px;
+        padding: 11px 15px;
+    }
+
+    .product_info .product_data .buy_btn .icon
+    {
+        margin-left: 3px;
+    }
+
+
+    .product_info .product_data .where_buy
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-bottom: -15px;
+        margin-left: -15px;
+        padding: 11px 15px;
+    }
+
+    .product_info .product_data .where_buy .icon
+    {
+        margin-right: 12px;
+    }
+
+    .product_info .product_data .where_buy .link
+    {
+        margin-top: 0;
+    }
+
+
+    .product_info .product_data .information
+    {
+        width: calc(100% - 328px);
+    }
+
+
+    .product_info .product_data .stickers
+    {
+        margin-top: 12px;
+        margin-bottom: -8px;
+        margin-left: -8px;
+    }
+
+    .product_info .product_data .stickers .sticker
+    {
+        margin-bottom: 8px;
+        margin-left: 8px;
+    }
+
+
+    .product_info .product_data .rating
+    {
+        margin-top: 16px;
+        padding-top: 16px;
+    }
+
+    .product_info .product_data .rating .stars img
+    {
+        width: 30px;
+    }
+
+
+    .product_info .product_data .description
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 16px;
+        padding-top: 16px;
+    }
+
+
+    .product_info .product_data .features
+    {
+        line-height: 22px;
+
+        max-width: calc(100% + 20px);
+        margin-top: 24px;
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .product_info .product_data .features > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .product_info .region_status .desc
+    {
+        line-height: 22px;
+
+        padding: 0 24px;
+    }
+
+
+    .product_info .region_status table th
+    {
+        padding: 0 24px 11px;
+    }
+
+    .product_info .region_status table td
+    {
+        padding: 12px 24px;
+    }
+
+
+
+    /*---------------------------
+        LK info - City filter
+    ---------------------------*/
+    .lk_info .city_filter .form
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+    .lk_info .city_filter .line
+    {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    .lk_info .city_filter .line.mini
+    {
+        width: calc(20% - 12px);
+    }
+
+    .lk_info .city_filter .line.big
+    {
+        width: calc(40% - 12px);
+    }
+
+
+
+    /*------------------------
+        LK info - LK links
+    ------------------------*/
+    .lk_info .lk_links a
+    {
+        padding: 8px 16px;
+    }
+
+
+
+    /*---------------------------
+        LK info - LK products
+    ---------------------------*/
+    .lk_info .lk_products
+    {
+        margin-top: 24px;
+    }
+
+
+    .lk_info .lk_products table th
+    {
+        padding: 11px 15px;
+    }
+
+    .lk_info .lk_products table td
+    {
+        line-height: 20px;
+
+        padding: 11px 15px;
+    }
+
+
+    .lk_info .lk_products table td.barcode,
+    .lk_info .lk_products table td.amount
+    {
+        width: 140px;
+        min-width: 140px;
+    }
+
+
+
+    /*----------------------
+        LK info - Orders
+    ----------------------*/
+    .lk_info .orders .filter .line:first-child
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+
+    .lk_info .orders .filter .line.mini
+    {
+        width: calc(100% - 448px);
+    }
+
+
+    .lk_info .orders .statuses .btn
+    {
+        padding: 8px 16px;
+    }
+
+
+    .lk_info .orders .titles
+    {
+        display: none;
+    }
+
+
+    .lk_info .orders .order
+    {
+        padding: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .lk_info .orders .order > *,
+    .lk_info .orders .order > *.big
+    {
+        position: relative;
+
+        width: 25%;
+        min-width: 0;
+        min-height: 0;
+        padding: 20px 0 0;
+    }
+
+    .lk_info .orders .order > * + *
+    {
+        border: none;
+    }
+
+    .lk_info .orders .order > *:before
+    {
+        color: #000;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 14px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 20px;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: 0;
+        text-transform: none;
+
+        opacity: .6;
+    }
+
+    .lk_info .orders .col_price + .col_date
+    {
+        margin-top: 16px;
+    }
+
+
+    .lk_info .orders .col_status
+    {
+        width: 75%;
+        margin-top: 16px;
+    }
+
+
+    .lk_info .orders .order .actions
+    {
+        display: flex;
+
+        width: calc(100% - 124px);
+        margin-left: auto;
+    }
+
+    .lk_info .orders .order:hover .current_status,
+    .lk_info .orders .order.active .current_status
+    {
+        display: inline-block;
+    }
+
+
+
+    .lk_info .order_info,
+    .lk_info .order_info.no_pad
+    {
+        padding: 15px;
+    }
+
+
+    .lk_info .order_info .tracking > *
+    {
+        line-height: 20px;
+
+        padding: 11px 0;
+    }
+
+
+    .lk_info .order_info .cart table th
+    {
+        line-height: 20px;
+
+        padding-bottom: 11px;
+    }
+
+    .lk_info .order_info .cart table td
+    {
+        line-height: 20px;
+
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+
+    .lk_info .order_info .cart table td.price,
+    .lk_info .order_info .cart table td.amount,
+    .lk_info .order_info .cart table td.barcode.mini,
+    .lk_info .order_info .cart table td.price.mini,
+    .lk_info .order_info .cart table td.amount.mini
+    {
+        width: 112px;
+        min-width: 112px;
+    }
+
+    .lk_info .order_info .cart table td.availability
+    {
+        width: 80px;
+        min-width: 80px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .list > *
+    {
+        padding-bottom: 31px;
+    }
+
+    .reviews .list > * + *
+    {
+        margin-top: 31px;
+    }
+
+
+    .reviews .review .head
+    {
+        margin-bottom: 12px;
+    }
+
+    .reviews .review .date
+    {
+        line-height: 24px;
+    }
+
+    .reviews .review .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-left: 24px;
+    }
+
+    .reviews .review .text
+    {
+        line-height: 23px;
+
+        width: calc(100% - 124px);
+    }
+
+
+
+    /*-----------
+        Login
+    -----------*/
+    .login_form
+    {
+        width: 480px;
+        max-width: 100%;
+    }
+
+
+    .login_form .exp
+    {
+        color: var(--text_color);
+        font-size: 14px;
+        line-height: 20px;
+
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        margin: 8px 0 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .phone a
+    {
+        font-size: 24px;
+    }
+
+
+    footer .phone .exp
+    {
+        line-height: 20px;
+    }
+
+
+    footer .title
+    {
+        margin-bottom: 16px;
+    }
+
+
+    footer .location
+    {
+        line-height: 22px;
+    }
+
+
+    footer .apps .links
+    {
+        margin-bottom: -16px;
+        margin-left: -16px;
+    }
+
+    footer .apps .links a
+    {
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+    footer .apps .links img
+    {
+        width: 212px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

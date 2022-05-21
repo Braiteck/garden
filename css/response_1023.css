@@ -1,0 +1,181 @@
+@media print, (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+    .swiper-container-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        bottom: 16px;
+    }
+
+
+    .content_flex .content
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .info
+    {
+        padding: 12px 0;
+    }
+
+
+    header .logo,
+    header .logo img
+    {
+        width: 172px;
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 364px);
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    aside
+    {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider
+    {
+        margin-bottom: 32px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog .category .name
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding: 11px 19px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row,
+    .content .products .row
+    {
+        --products_count: 3;
+    }
+
+    .products .row > *,
+    .content .products .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .head .product_name
+    {
+        font-size: 25px;
+        line-height: 31px;
+    }
+
+
+
+    .product_info .region_status table td.val
+    {
+        width: 240px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 24px;
+    }
+
+
+    footer .apps .links
+    {
+        width: 180px;
+        margin-bottom: -8px;
+        margin-left: 0;
+    }
+
+    footer .apps .links a
+    {
+        margin-bottom: 8px;
+        margin-left: 0;
+    }
+
+    footer .apps .links img
+    {
+        width: 180px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#53bed0">
+		<meta name="theme-color" content="#53bed0">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/air-datepicker.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="top">
+						<div class="cont row">
+							<button class="mob_menu_btn">
+								<span></span>
+							</button>
+
+							<nav class="menu row">
+								<div class="item">
+									<a href="/">Сборка заказов</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Акции и новости</a>
+								</div>
+
+								<div class="item">
+									<a class="active">Контакты</a>
+								</div>
+
+								<div class="item">
+									<a href="/">О нас</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Доставка почтой</a>
+								</div>
+							</nav>
+
+							<div class="city">
+								<div class="name">Город</div>
+
+								<select name="">
+									<option value="1" selected>Москва</option>
+									<option value="2">Санкт-Петербург</option>
+									<option value="3">Москва</option>
+									<option value="4">Москва</option>
+								</select>
+
+								<img src="images/ic_select_arrow.svg" alt="" class="icon">
+							</div>
+
+							<div class="phone">
+								<a href="tel:88000000000">8 (800) 000-00-00</a>
+							</div>
+
+							<div class="account">
+								<a href="/">
+									<img src="images/ic_user.png" alt="" class="icon">
+									<span>Иванов Михаил</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="info">
+						<div class="cont row">
+							<a href="/" class="logo">
+								<img src="images/logo.png" alt="">
+							</a>
+
+							<button class="mob_search_btn">
+								<img src="images/ic_search.svg" alt="" class="icon">
+							</button>
+
+							<div class="search">
+								<form action="">
+									<img src="images/ic_search.svg" alt="" class="icon">
+									<input type="text" name="" value="" class="input" placeholder="Поиск по сайту">
+								</form>
+							</div>
+
+							<a href="/" class="cart">
+								<img src="images/ic_cart.png" alt="" class="icon">
+								<div class="empty">В корзине<br> нет товаров</div>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">
+								<img src="images/ic_home.png" alt="" class="icon">
+								<span>Главная</span>
+							</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+							<a href="/">Личный кабинет</a>
+
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+							<span class="current">Профиль</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex block">
+					<div class="cont row">
+						<aside>
+							<div class="categories">
+								<div class="title">Мы продаём</div>
+
+								<div class="items accordion">
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ПЛОДОВЫЕ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ДЕКОРАТИВНЫЕ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ОВОЩИ</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+
+									<div class="item accordion_item">
+										<a href="/" class="head sub_link">
+											<span>ЛУК И ЧЕСНОК</span>
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_select_arrow"></use></svg>
+										</a>
+
+										<div class="data sub_categories">
+											<div><a href="/">Помидоры</a></div>
+											<div><a href="/">Огурцы</a></div>
+											<div><a href="/">Кабачки</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content">
+							<section class="lk_info">
+								<div class="block_head">
+									<div class="title">Профиль</div>
+								</div>
+
+								<div class="lk_links">
+									<div><a class="active">Заказы</a></div>
+									<div><a href="/">Список товаров</a></div>
+								</div>
+
+								<div class="orders">
+									<form action="" class="form filter">
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Поиск по номеру заказа и телефону">
+											</div>
+										</div>
+
+										<div class="line range">
+											<div class="field">
+												<div class="prefix">От</div>
+												<input type="text" name="" value="11.10.2021" class="input date_from">
+											</div>
+
+											<div class="sep"></div>
+
+											<div class="field">
+												<div class="prefix">До</div>
+												<input type="text" name="" value="11.10.2021" class="input date_to">
+											</div>
+										</div>
+
+										<div class="line mini">
+											<div class="field">
+												<select name="">
+													<option value="0" data-display="Все"></option>
+													<option value="1">Вариант 1</option>
+													<option value="2">Вариант 2</option>
+													<option value="3">Вариант 3</option>
+												</select>
+
+												<img src="images/ic_select_arrow2.svg" alt="" class="icon">
+											</div>
+										</div>
+
+										<div class="submit">
+											<button type="submit" class="submit_btn">Найти</button>
+										</div>
+									</form>
+
+
+									<div class="statuses">
+										<div><button class="btn active">Все заказы</button></div>
+										<div><button class="btn">Новый <span>3</span></button></div>
+										<div><button class="btn">Собран <span>3</span></button></div>
+										<div><button class="btn">Готов к выдаче <span>12</span></button></div>
+									</div>
+
+									<div class="orders_list">
+										<div class="titles">
+											<div class="col_number">№ заказа</div>
+											<div class="col_date">
+												<span>Дата заказа</span>
+												<button class="sort_btn">
+													<img src="images/ic_sort.svg" alt="">
+												</button>
+											</div>
+											<div class="col_amount">Кол-во</div>
+											<div class="col_price">Сумма</div>
+											<div class="col_date">Собрать до</div>
+											<div class="col_status">Статус</div>
+										</div>
+
+
+										<div class="order">
+											<div class="col_number" data-column="№ заказа">
+												<button class="show_hide_btn">СВ0000000</button>
+											</div>
+											<div class="col_date" data-column="Дата заказа">03.08.2021 16:00</div>
+											<div class="col_amount" data-column="Кол-во">9 шт.</div>
+											<div class="col_price" data-column="Сумма"><span>5 400</span>.00 Р</div>
+											<div class="col_date" data-column="Собрать до">03.08.2021 16:00</div>
+											<div class="col_status" data-column="Статус">
+												<div class="current_status red">Отменён</div>
+
+												<div class="actions">
+													<div class="change">
+														<select name="">
+															<option value="1" selected>Новый</option>
+															<option value="2">Вриант 2</option>
+															<option value="3">Вриант 3</option>
+															<option value="4">Вриант 4</option>
+														</select>
+
+														<img src="images/ic_select_arrow.svg" alt="" class="icon">
+													</div>
+
+													<button class="cancel_btn modal_btn" data-content="#why_del_modal">
+														<img src="images/ic_delete.png" alt="" class="icon">
+													</button>
+
+													<button class="add_time_btn modal_btn" data-content="#add_time_modal">
+														<img src="images/ic_add_time.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="order_info">
+											<div class="head">
+												<div class="title">Информация по заказу № СВ0000000</div>
+
+												<div class="customer">Покупатель: Иванов Иван Иванович. Телефон: 8 (000) 000-00-00. Магазин: Адрес магазина</div>
+
+												<div class="print_btn">
+													<button class="btn">
+														<span>Распечатать</span>
+														<img src="images/ic_print.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+
+											<div class="tracking">
+												<div>
+													<div class="name">
+														<span>Дата поступления заказа</span>
+													</div>
+													<div class="date">03.08.2021 16:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Магазин)</div>
+													<div class="date">03.08.2021 17:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Склад)</div>
+													<div class="date">03.08.2021 17:30</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Отправлено (Склад)</div>
+													<div class="date">03.08.2021 19:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка завершена (Магазин)</div>
+													<div class="date">04.08.2021 10:00</div>
+												</div>
+
+												<div>
+													<div class="name">Готов к выдаче (Магазин)</div>
+													<div class="date">04.08.2021 10:02</div>
+												</div>
+											</div>
+
+											<div class="cart">
+												<table>
+													<thead>
+														<tr>
+															<th>Наименование</th>
+															<th>Штрих-код</th>
+															<th>Цена</th>
+															<th>Количество</th>
+															<th>Стоимость</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking1.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking2.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking3.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+
+										<div class="order">
+											<div class="col_number" data-column="№ заказа">
+												<button class="show_hide_btn">СВ0000000</button>
+											</div>
+											<div class="col_date" data-column="Дата заказа">03.08.2021 16:00</div>
+											<div class="col_amount" data-column="Кол-во">9 шт.</div>
+											<div class="col_price" data-column="Сумма"><span>5 400</span>.00 Р</div>
+											<div class="col_date" data-column="Собрать до">03.08.2021 16:00</div>
+											<div class="col_status" data-column="Статус">
+												<div class="current_status blue">Выдан</div>
+
+												<div class="actions">
+													<div class="change">
+														<select name="">
+															<option value="1" selected>Новый</option>
+															<option value="2">Вриант 2</option>
+															<option value="3">Вриант 3</option>
+															<option value="4">Вриант 4</option>
+														</select>
+
+														<img src="images/ic_select_arrow.svg" alt="" class="icon">
+													</div>
+
+													<button class="cancel_btn modal_btn" data-content="#why_del_modal">
+														<img src="images/ic_delete.png" alt="" class="icon">
+													</button>
+
+													<button class="add_time_btn modal_btn" data-content="#add_time_modal">
+														<img src="images/ic_add_time.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="order_info">
+											<div class="head">
+												<div class="title">Информация по заказу № СВ0000000</div>
+
+												<div class="customer">Покупатель: Иванов Иван Иванович. Телефон: 8 (000) 000-00-00. Магазин: Адрес магазина</div>
+
+												<div class="print_btn">
+													<button class="btn">
+														<span>Распечатать</span>
+														<img src="images/ic_print.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+
+											<div class="tracking">
+												<div>
+													<div class="name">
+														<span>Дата поступления заказа</span>
+													</div>
+													<div class="date">03.08.2021 16:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Магазин)</div>
+													<div class="date">03.08.2021 17:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Склад)</div>
+													<div class="date">03.08.2021 17:30</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Отправлено (Склад)</div>
+													<div class="date">03.08.2021 19:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка завершена (Магазин)</div>
+													<div class="date">04.08.2021 10:00</div>
+												</div>
+
+												<div>
+													<div class="name">Готов к выдаче (Магазин)</div>
+													<div class="date">04.08.2021 10:02</div>
+												</div>
+											</div>
+
+											<div class="cart">
+												<table>
+													<thead>
+														<tr>
+															<th>Наименование</th>
+															<th>Штрих-код</th>
+															<th>Цена</th>
+															<th>Количество</th>
+															<th>Стоимость</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking1.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking2.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking3.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+
+										<div class="order">
+											<div class="col_number" data-column="№ заказа">
+												<button class="show_hide_btn">СВ0000000</button>
+											</div>
+											<div class="col_date" data-column="Дата заказа">03.08.2021 16:00</div>
+											<div class="col_amount" data-column="Кол-во">9 шт.</div>
+											<div class="col_price" data-column="Сумма"><span>5 400</span>.00 Р</div>
+											<div class="col_date" data-column="Собрать до">
+												<div>11.08.2021 16:00</div>
+												<div class="exp">осталось 12 часов</div>
+											</div>
+											<div class="col_status" data-column="Статус">
+												<div class="current_status blue">Выдан</div>
+
+												<div class="actions">
+													<div class="change">
+														<select name="">
+															<option value="1" selected>Новый</option>
+															<option value="2">Вриант 2</option>
+															<option value="3">Вриант 3</option>
+															<option value="4">Вриант 4</option>
+														</select>
+
+														<img src="images/ic_select_arrow.svg" alt="" class="icon">
+													</div>
+
+													<button class="cancel_btn modal_btn" data-content="#why_del_modal">
+														<img src="images/ic_delete.png" alt="" class="icon">
+													</button>
+
+													<button class="add_time_btn modal_btn" data-content="#add_time_modal">
+														<img src="images/ic_add_time.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="order_info">
+											<div class="head">
+												<div class="title">Информация по заказу № СВ0000000</div>
+
+												<div class="customer">Покупатель: Иванов Иван Иванович. Телефон: 8 (000) 000-00-00. Магазин: Адрес магазина</div>
+
+												<div class="print_btn">
+													<button class="btn">
+														<span>Распечатать</span>
+														<img src="images/ic_print.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+
+											<div class="tracking">
+												<div>
+													<div class="name">
+														<span>Дата поступления заказа</span>
+													</div>
+													<div class="date">03.08.2021 16:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Магазин)</div>
+													<div class="date">03.08.2021 17:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Склад)</div>
+													<div class="date">03.08.2021 17:30</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Отправлено (Склад)</div>
+													<div class="date">03.08.2021 19:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка завершена (Магазин)</div>
+													<div class="date">04.08.2021 10:00</div>
+												</div>
+
+												<div>
+													<div class="name">Готов к выдаче (Магазин)</div>
+													<div class="date">04.08.2021 10:02</div>
+												</div>
+											</div>
+
+											<div class="cart">
+												<table>
+													<thead>
+														<tr>
+															<th>Наименование</th>
+															<th>Штрих-код</th>
+															<th>Цена</th>
+															<th>Количество</th>
+															<th>Стоимость</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking1.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking2.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking3.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+
+										<div class="order">
+											<div class="col_number" data-column="№ заказа">
+												<button class="show_hide_btn">СВ0000000</button>
+											</div>
+											<div class="col_date" data-column="Дата заказа">03.08.2021 16:00</div>
+											<div class="col_amount" data-column="Кол-во">9 шт.</div>
+											<div class="col_price" data-column="Сумма"><span>5 400</span>.00 Р</div>
+											<div class="col_date" data-column="Собрать до">03.08.2021 16:00</div>
+											<div class="col_status" data-column="Статус">
+												<div class="current_status red">Отменён</div>
+
+												<div class="actions">
+													<div class="change">
+														<select name="">
+															<option value="1" selected>Новый</option>
+															<option value="2">Вриант 2</option>
+															<option value="3">Вриант 3</option>
+															<option value="4">Вриант 4</option>
+														</select>
+
+														<img src="images/ic_select_arrow.svg" alt="" class="icon">
+													</div>
+
+													<button class="cancel_btn modal_btn" data-content="#why_del_modal">
+														<img src="images/ic_delete.png" alt="" class="icon">
+													</button>
+
+													<button class="add_time_btn modal_btn" data-content="#add_time_modal">
+														<img src="images/ic_add_time.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="order_info">
+											<div class="head">
+												<div class="title">Информация по заказу № СВ0000000</div>
+
+												<div class="customer">Покупатель: Иванов Иван Иванович. Телефон: 8 (000) 000-00-00. Магазин: Адрес магазина</div>
+
+												<div class="print_btn">
+													<button class="btn">
+														<span>Распечатать</span>
+														<img src="images/ic_print.png" alt="" class="icon">
+													</button>
+												</div>
+											</div>
+
+											<div class="tracking">
+												<div>
+													<div class="name">
+														<span>Дата поступления заказа</span>
+													</div>
+													<div class="date">03.08.2021 16:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Магазин)</div>
+													<div class="date">03.08.2021 17:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка (Склад)</div>
+													<div class="date">03.08.2021 17:30</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Отправлено (Склад)</div>
+													<div class="date">03.08.2021 19:00</div>
+												</div>
+
+												<div>
+													<div class="name">Статус — Сборка завершена (Магазин)</div>
+													<div class="date">04.08.2021 10:00</div>
+												</div>
+
+												<div>
+													<div class="name">Готов к выдаче (Магазин)</div>
+													<div class="date">04.08.2021 10:02</div>
+												</div>
+											</div>
+
+											<div class="cart">
+												<table>
+													<thead>
+														<tr>
+															<th>Наименование</th>
+															<th>Штрих-код</th>
+															<th>Цена</th>
+															<th>Количество</th>
+															<th>Стоимость</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking1.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking2.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+
+														<tr>
+															<td class="name" data-column="Наименование">
+																<div class="icon">
+																	<img src="images/ic_tracking3.png" alt="">
+																</div>
+																<span>Малина Васёна</span>
+															</td>
+															<td class="barcode" data-column="Штрих-код">000123</td>
+															<td class="price" data-column="Цена"><span>54</span>.00 Р</td>
+															<td class="amount" data-column="Количество">10 шт.</td>
+															<td class="price" data-column="Стоимость"><span>540</span>.00 Р</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row">
+					<div class="phone">
+						<a href="tel:88007377758">8 800 737-77-58</a>
+						<div class="exp">Круглосуточно</div>
+					</div>
+
+					<div class="contacts">
+						<div class="title">Контакты</div>
+
+						<div class="location">Челябинская область,<br> Красноармейский район,<br> д. Шибаново, ул. Центральная, 92</div>
+					</div>
+
+					<div class="apps">
+						<div class="title">Наши приложения</div>
+
+						<div class="links">
+							<a href="/">
+								<img src="images/ic_google_play.png" alt="">
+							</a>
+
+							<a href="/">
+								<img src="images/ic_app_stote.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="why_del_modal">
+			<div class="modal_title">Укажите причину отмены</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<select name="">
+								<option value="0" data-display="Выберите причину" selected></option>
+								<option value="1">Вариант 1</option>
+								<option value="2">Вариант 2</option>
+								<option value="3">Вариант 3</option>
+							</select>
+
+							<img src="images/ic_select_arrow.svg" alt="" class="icon">
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Готово</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="add_time_modal">
+			<div class="modal_title">На сколько часов увеличить сборку</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="line">
+						<div class="field">
+							<select name="">
+								<option value="1" selected>4 часа</option>
+								<option value="2">4 часа</option>
+								<option value="3">4 часа</option>
+							</select>
+
+							<img src="images/ic_select_arrow.svg" alt="" class="icon">
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn">Готово</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/air-datepicker.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
