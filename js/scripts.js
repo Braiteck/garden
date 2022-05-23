@@ -92,6 +92,29 @@ $(() => {
 	})
 
 
+	// Товар в избранное
+	$('.product .favorite_btn, .product_info .favorite_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Выбор лимита по дозагрузке
+	$('.load_more .more_btn .mini_modal > *').click(function (e) {
+		e.preventDefault()
+
+		let value = $(this).text(),
+			parent = $(this).closest('.more_btn')
+
+		parent.find('.btn span').text(value)
+
+		$('.mini_modal, .mini_modal_btn').removeClass('active')
+
+		if (is_touch_device()) $('body').css('cursor', 'default')
+	})
+
+
 	// Моб. поиск
 	$('header .mob_search_btn').click(function (e) {
 		e.preventDefault()

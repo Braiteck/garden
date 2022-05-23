@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -101,7 +102,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -369,7 +370,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 
@@ -550,6 +551,8 @@ button
     color: #fff;
     font-weight: 700;
 
+    display: flex;
+
     height: 45px;
     padding: 0 19px;
 
@@ -558,11 +561,58 @@ button
     border: 1px solid #53bed0;
     border-radius: 30px;
     background: #53bed0;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+
+.load_more .more_btn .modal_cont
+{
+    margin: 0 6px;
+}
+
+.load_more .more_btn .btn span
+{
+    border-bottom: 1px dashed;
+}
+
+
+.load_more .more_btn .mini_modal
+{
+    left: -12px;
+
+    width: calc(100% + 24px);
+    margin-top: 8px;
+    padding: 8px 0;
+
+    white-space: nowrap;
+
+    border-radius: 0 0 10px 10px;
+    background: #53bed0;
+}
+
+.load_more .more_btn .mini_modal > *
+{
+    cursor: pointer;
+}
+
+.load_more .more_btn .mini_modal > * + *
+{
+    margin-top: 4px;
+}
+
 
 .load_more .more_btn:hover
 {
     border-color: #42a5b6;
+    background: #42a5b6;
+}
+
+.load_more .more_btn:hover .mini_modal
+{
     background: #42a5b6;
 }
 
@@ -660,6 +710,43 @@ button
 .ymaps-2-1-79-balloon__tail
 {
     display: none !important;
+}
+
+
+
+/*----------------
+    Mini modal
+----------------*/
+.modal_cont
+{
+    position: relative;
+}
+
+
+.mini_modal
+{
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.mini_modal.active
+{
+    top: 100%;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    opacity: 1;
 }
 
 
@@ -1049,7 +1136,7 @@ header .mob_search_btn img
 
 header .search
 {
-    width: calc(100% - 520px);
+    width: calc(100% - 620px);
 }
 
 header .search form
@@ -1112,14 +1199,48 @@ header .search .input:focus
 
 
 
-header .cart
+header .favorites
 {
     color: currentColor;
 
     display: flex;
 
-    width: 160px;
-    max-width: 100%;
+    text-decoration: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .favorites .icon
+{
+    display: block;
+
+    margin-right: 11px;
+}
+
+header .favorites .empty
+{
+    color: #872f1a;
+    font-size: 14px;
+    line-height: 18px;
+
+    transition: color .2s linear;
+}
+
+header .favorites:hover .empty
+{
+    color: #42a5b6;
+}
+
+
+
+header .cart
+{
+    color: currentColor;
+
+    display: flex;
 
     text-decoration: none;
 
@@ -1141,8 +1262,6 @@ header .cart .empty
     color: #872f1a;
     font-size: 14px;
     line-height: 18px;
-
-    width: calc(100% - 53px);
 
     transition: color .2s linear;
 }
@@ -2425,6 +2544,12 @@ aside .categories .sub_categories a.active
     flex-wrap: wrap;
 }
 
+.products .product .info .buy
+{
+    width: calc(100% + 40px);
+    margin: 20px -20px -20px;
+}
+
 
 .products .product .buy .price
 {
@@ -2503,11 +2628,12 @@ aside .categories .sub_categories a.active
 .products .product .buy_btn
 {
     color: #53bed0;
+    font-size: 14px;
     font-weight: 700;
 
     display: flex;
 
-    width: 100%;
+    width: calc(100% - 58px);
     height: 58px;
     padding: 12px 16px;
 
@@ -2527,7 +2653,7 @@ aside .categories .sub_categories a.active
 {
     display: block;
 
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
 .products .product .buy_btn:hover .icon,
@@ -2546,6 +2672,83 @@ aside .categories .sub_categories a.active
 .products .product .buy_btn:hover .icon + .icon
 {
     display: block;
+}
+
+
+.products .product .favorite_btn
+{
+    position: relative;
+
+    display: flex;
+
+    width: 58px;
+    height: 58px;
+    margin-left: auto;
+
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.products .product .favorite_btn svg path
+{
+    transition: fill .2s linear;
+
+    fill: transparent;
+    stroke: #53bed0;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.products .product .favorite_btn.active svg path
+{
+    fill: #53bed0;
+}
+
+
+.products .product .favorite_btn span
+{
+    color: #fff;
+    font-size: 14px;
+
+    position: absolute;
+    z-index: 99;
+    top: calc(100% + 10px);
+    left: 50%;
+
+    display: none;
+
+    width: 200px;
+    margin-left: -100px;
+    padding: 12px;
+
+    text-align: center;
+
+    border-radius: 5px;
+    background: rgba(83, 190, 208, .9);
+}
+
+.products .product .favorite_btn span + span
+{
+    background: rgba(20, 20, 20, .7);
+}
+
+.products .product .favorite_btn:hover span,
+.products .product .favorite_btn.active:hover span + span
+{
+    display: block;
+}
+
+.products .product .favorite_btn:hover span + span,
+.products .product .favorite_btn.active:hover span
+{
+    display: none;
 }
 
 
@@ -2822,7 +3025,7 @@ aside .categories .sub_categories a.active
 
     display: flex;
 
-    width: 100%;
+    width: calc(100% - 58px);
     height: 58px;
     padding: 12px 20px;
 
@@ -2861,6 +3064,83 @@ aside .categories .sub_categories a.active
 .product_info .product_data .buy_btn:hover .icon + .icon
 {
     display: block;
+}
+
+
+.product_info .product_data .favorite_btn
+{
+    position: relative;
+
+    display: flex;
+
+    width: 58px;
+    height: 58px;
+    margin-left: auto;
+
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.product_info .product_data .favorite_btn svg path
+{
+    transition: fill .2s linear;
+
+    fill: transparent;
+    stroke: #53bed0;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.product_info .product_data .favorite_btn.active svg path
+{
+    fill: #53bed0;
+}
+
+
+.product_info .product_data .favorite_btn span
+{
+    color: #fff;
+    font-size: 14px;
+
+    position: absolute;
+    z-index: 99;
+    top: calc(100% + 10px);
+    left: 50%;
+
+    display: none;
+
+    width: 200px;
+    margin-left: -100px;
+    padding: 12px;
+
+    text-align: center;
+
+    border-radius: 5px;
+    background: rgba(83, 190, 208, .9);
+}
+
+.product_info .product_data .favorite_btn span + span
+{
+    background: rgba(20, 20, 20, .7);
+}
+
+.product_info .product_data .favorite_btn:hover span,
+.product_info .product_data .favorite_btn.active:hover span + span
+{
+    display: block;
+}
+
+.product_info .product_data .favorite_btn:hover span + span,
+.product_info .product_data .favorite_btn.active:hover span
+{
+    display: none;
 }
 
 
@@ -6540,4 +6820,41 @@ footer .apps .links img
     font-weight: 700;
 
     margin-bottom: 20px;
+}
+
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    .products .row
+    {
+        margin-left: -30px;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 30px);
+        margin-left: 30px;
+    }
+
+    .content .products .row > *
+    {
+        width: calc(33.333% - 30px);
+    }
+
+
+    .products .product .buy_btn
+    {
+        width: calc(100% - 52px);
+        height: 52px;
+        padding: 12px;
+    }
+
+    .products .product .favorite_btn
+    {
+        width: 52px;
+        height: 52px;
+    }
 }
